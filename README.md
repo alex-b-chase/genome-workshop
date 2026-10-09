@@ -20,6 +20,16 @@ The goal is not simply to run bioinformatics software. We use the computational 
 - recombination
 - phylogenetic conservation of microbial traits
 
+### Genome dataset
+
+The genomes used in this exercise are *Curtobacterium* isolates originally described in:
+
+Chase AB, Gomez-Lunar Z, Lopez AE, Li J, Allison SD, Martiny AC, and Martiny JBH. 2018. **Emergence of soil bacterial ecotypes along a climate gradient.** *Environmental Microbiology* 20:4112–4126.
+
+https://doi.org/10.1111/1462-2920.14405
+
+These isolates were collected across a southern California climate gradient and represent different levels of genomic relatedness within *Curtobacterium*. This makes them useful for examining how genome similarity, core genome size, and flexible gene content change across evolutionary divergence.
+
 ---
 
 # Before starting: M3 and Unix skills
@@ -394,6 +404,33 @@ All genomes are annotated using **Prokka** before gene-content comparisons.
 Using the same annotation pipeline for every genome is important because inconsistent gene prediction or annotation can create apparent differences in gene content.
 
 The Prokka GFF files are used as input for Panaroo.
+
+### Look inside a Prokka annotation
+
+Before moving on to the pangenome analysis, look inside the annotation from **one genome**.
+
+For example, examine its Prokka `.tsv` file:
+
+```bash
+less prokka/GENOME/GENOME.tsv
+```
+
+Look at the gene names. You may notice that some annotations occur more than once and are labeled with suffixes such as:
+```text
+gene
+gene_2
+gene_3
+```
+
+> Why might the same annotated gene occur multiple times within one genome?
+
+These repeated copies provide a useful example of the distinction we need to make during comparative genomics:
+- orthologs are homologous genes separated by lineage divergence and compared across genomes
+- paralogs are homologous genes produced by duplication within a lineage
+
+The _2 or _3 suffix itself is not an orthology assignment. They indicate that Prokka encountered multiple features assigned the same gene name. These duplicated annotations are useful **candidate** paralogs to inspect
+
+This is one reason pangenome analysis cannot simply group genes based on their annotation names. Panaroo uses sequence similarity and genomic context to determine which genes belong to the same gene family while attempting to distinguish orthologous groups from paralogous copies.
 
 ## Homology, orthology, and paralogy
 
