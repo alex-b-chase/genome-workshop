@@ -1,0 +1,2 @@
+n_scaffolds	n_contigs	scaf_bp	contig_bp	gap_pct	scaf_N50	scaf_L50	ctg_N50	ctg_L50	scaf_N90	scaf_L90	ctg_N90	ctg_L90	scaf_max	ctg_max	scaf_n_gt50K	scaf_pct_gt50K	gc_avg	gc_std	filename
+25	25	3468825	3468825	0.000	5	285103	5	285103	14	66334	14	66334	517278	517278	15	93.302	0.71742	0.03264	/lustre/work/client/projects/abchase/geol4379_1267_001c/shared_data/genome_workshop/pangenome/genomes/MCBD17_031.fna

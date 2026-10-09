@@ -1,0 +1,6 @@
+n_scaffolds	n_contigs	scaf_bp	contig_bp	gap_pct	scaf_N50	scaf_L50	ctg_N50	ctg_L50	scaf_N90	scaf_L90	ctg_N90	ctg_L90	scaf_max	ctg_max	scaf_n_gt50K	scaf_pct_gt50K	gc_avg	gc_std	filename
+25	25	3468825	3468825	0.000	5	285103	5	285103	14	66334	14	66334	517278	517278	15	93.302	0.71742	0.03264	/lustre/work/client/projects/abchase/geol4379_1267_001c/shared_data/genome_workshop/pangenome/genomes/MCBD17_031.fna
+1	1	3635022	3635022	0.000	1	3635022	1	3635022	1	3635022	1	3635022	3635022	3635022	1	100.000	0.71950	0.00000	/lustre/work/client/projects/abchase/geol4379_1267_001c/shared_data/genome_workshop/pangenome/genomes/MCLR17_036.fna
+25	25	3729778	3729778	0.000	5	250661	5	250661	14	87732	14	87732	763370	763370	17	96.537	0.71114	0.03240	/lustre/work/client/projects/abchase/geol4379_1267_001c/shared_data/genome_workshop/pangenome/genomes/MCLR17_059.fna
+31	31	3539297	3539297	0.000	7	220775	7	220775	16	95717	16	95717	443526	443526	17	94.160	0.70992	0.03055	/lustre/work/client/projects/abchase/geol4379_1267_001c/shared_data/genome_workshop/pangenome/genomes/MCPF17_052.fna
+1	1	3773875	3773875	0.000	1	3773875	1	3773875	1	3773875	1	3773875	3773875	3773875	1	100.000	0.71032	0.00000	/lustre/work/client/projects/abchase/geol4379_1267_001c/shared_data/genome_workshop/pangenome/genomes/MMLR14_002.fna

@@ -1,0 +1,7 @@
+organism: Curtobacterium species strain 
+contigs: 25
+bases: 3729778
+CDS: 3521
+rRNA: 6
+tRNA: 53
+tmRNA: 1
